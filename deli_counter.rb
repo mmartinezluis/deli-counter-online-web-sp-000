@@ -5,7 +5,7 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    new_array= array.collect! {|element| "#{array.index(element)+1}. " "#{element}"}
+    new_array= array.collect {|element| "#{array.index(element)+1}. " "#{element}"}
     string_array= new_array.join(" ")
     puts "The line is currently: #{string_array}"
   end
