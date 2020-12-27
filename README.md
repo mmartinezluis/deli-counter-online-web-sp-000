@@ -15,7 +15,7 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    array.map.with_index(1) do |element, index|
+    array.map.with_index(1)! do |element, index|
       "#{index}. #{element}"
     end
 
