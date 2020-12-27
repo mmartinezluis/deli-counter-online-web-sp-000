@@ -15,8 +15,9 @@ def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    new_array= array.collect! {|element| "#{array.index(element)+1}. " "#{element}"}
-    string_array= new_array.join(" ")
+    array.map.with_index(1) do |element, index|
+      "#{index}. #{element}"
+    
     puts "The line is currently: #{string_array}"
   end
 end
