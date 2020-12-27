@@ -1,16 +1,25 @@
 
 
+def line(array)
+  if array.length == 0
+    puts "The line is currently empty."
+  else
+    new_array= array.collect! {|element| "#{array.index(element)+1}. " "#{element}"}
+    string_array= new_array.join(" ")
+    puts "The line is currently: #{string_array}"
+  end
+end
+
 
 def line(array)
   if array.length == 0
     puts "The line is currently empty."
   else
-    array.collect do |element|
-      array.join("#{array.index(element)}")
-    end
+    new_array= array.collect! {|element| "#{array.index(element)+1}. " "#{element}"}
+    string_array= new_array.join(" ")
+    puts "The line is currently: #{string_array}"
   end
 end
-
 
 
 
