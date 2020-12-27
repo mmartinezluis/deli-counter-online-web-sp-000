@@ -17,7 +17,8 @@ def line(array)
   else
     array.map.with_index(1) do |element, index|
       "#{index}. #{element}"
-    
+    end
+
     puts "The line is currently: #{string_array}"
   end
 end
