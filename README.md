@@ -1,3 +1,19 @@
+
+
+
+def line(array)
+  if array.length == 0
+    puts "The line is currently empty."
+  else
+    array.collect do |element|
+      array.join("#{array.index(element)}")
+    end
+  end
+end
+
+
+
+
 # Deli Counter - Take a Number
 
 ## Objectives
